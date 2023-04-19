@@ -17,8 +17,36 @@
 
 #img_container {
     max-width: 1000px;
+    max-height: 500px;
+    position: relative;
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 500px;
+    display: block;
+}
+
+.button {
+    background-color: #ffffff84;
+    border-radius: 50%;
+    border: 0;
+    padding: 0.25rem 0.30rem;
+    font-size: 25px;
+}
+
+#up {
+    position: absolute;
+    transform: translate(-50% -50%);
+    top: 2%;
+    left: 50%;
+    z-index: 99;
+}
+
+#down {
+    position: absolute;
+    transform: translate(-50% -50%);
+    bottom: 2%;
+    left: 50%;
+    z-index: 99;
 }
