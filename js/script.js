@@ -16,7 +16,12 @@ do {
 document.getElementById("image").src = images[i];
 document.getElementById("image").alt = alts[i];
 
-
+if (i == 0) {
+    document.getElementById("down").style.display = "none";
+}
+else if (i==4) {
+    document.getElementById("up").style.display = "none";
+}
 
 // --- FUNCTIONS ---
 
