@@ -1,0 +1,1 @@
+I file originali dell'esercizio sono stati spostati nella cartella 'Cycling_image' per evitare di perderli ed in quanto è cambia parte dell'approccio al problema che avrebbe richiesto una riscrittura generale.
