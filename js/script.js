@@ -6,6 +6,7 @@ const alts = ["Spiderman", "Ratchet & Clank", "You are lucky that the image didn
 // --- VARIABLES ---
 
 let i;
+let button;
 
 // --- COMPUTATIONs ---
 
@@ -23,8 +24,36 @@ else if (i==4) {
     document.getElementById("up").style.display = "none";
 }
 
+// --- BUTTONS ---
+
+button = document.getElementById("up");
+button.addEventListener("click", next);
+
+button = document.getElementById("down");
+button.addEventListener("click", prev);
+
 // --- FUNCTIONS ---
 
-function img_source() {
-    
+function next() {
+    i++;
+    document.getElementById("image").src = images[i];
+    document.getElementById("image").alt = alts[i];
+    if (i == 1) {
+        document.getElementById("down").style.display = "block";
+    }
+    if (i==4) {
+        document.getElementById("up").style.display = "none";
+    }
+}
+
+function prev() {
+    i--;
+    document.getElementById("image").src = images[i];
+    document.getElementById("image").alt = alts[i];
+    if (i==3) {
+        document.getElementById("up").style.display = "block";
+    }
+    if (i == 0) {
+        document.getElementById("down").style.display = "none";
+    }
 }
