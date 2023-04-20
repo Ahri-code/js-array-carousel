@@ -131,35 +131,54 @@ function load_img() {
     x = this.getAttribute('id');
     if (x == "one") {
         x = this.getAttribute('src');
+        document.getElementById("image").src = x;
+        document.getElementById("image").alt = x;
+        x = this.getAttribute('alt');
         document.getElementById("one").src = images [i];
         document.getElementById("one").alt = alts [i];
-        document.getElementById("image").src = x;
-        x = this.getAttribute('alt');
-        document.getElementById("image").alt = x;
+        j = 0;
+        while (alts[j] != x) {
+            j++;
+        }
+        i = j;
     }
     else if (x == "two") {
         x = this.getAttribute('src');
+        document.getElementById("image").src = x;
+        document.getElementById("image").alt = x;
+        x = this.getAttribute('alt');
         document.getElementById("two").src = images [i];
         document.getElementById("two").alt = alts [i];
-        document.getElementById("image").src = x;
-        x = this.getAttribute('alt');
-        document.getElementById("image").alt = x;
+        j = 0;
+        while (alts[j] != x) {
+            j++;
+        }
+        i = j;
     }
     else if (x == "three") {
         x = this.getAttribute('src');
+        document.getElementById("image").src = x;
+        document.getElementById("image").alt = x;
+        x = this.getAttribute('alt');
         document.getElementById("three").src = images [i];
         document.getElementById("three").alt = alts [i];
-        document.getElementById("image").src = x;
-        x = this.getAttribute('alt');
-        document.getElementById("image").alt = x;
+        j = 0;
+        while (alts[j] != x) {
+            j++;
+        }
+        i = j;
     }
     else if (x == "four") {
         x = this.getAttribute('src');
+        document.getElementById("image").src = x;
+        document.getElementById("image").alt = x;
+        x = this.getAttribute('alt');
         document.getElementById("four").src = images [i];
         document.getElementById("four").alt = alts [i];
-        document.getElementById("image").src = x;
-        x = this.getAttribute('alt');
-        document.getElementById("image").alt = x;
-        console.log(x);
+        j = 0;
+        while (alts[j] != x) {
+            j++;
+        }
+        i = j;
     }
 }
